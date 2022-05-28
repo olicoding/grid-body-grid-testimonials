@@ -1,0 +1,111 @@
+/*
+
+# Front-end Mentor Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600
+
+*/
+
+
+/* ========== */
+/* Soft Reset */
+/* ========== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+cite {
+  font-style: normal;
+}
+
+/* ========= */
+/* BODY GRID */
+/* ========= */
+
+.body-grid-container {
+  font: normal 1rem/1.5 sans-serif;
+  height: 100vh;
+  display: grid;
+  grid:  minmax(100px, auto) auto minmax(100px, auto) / 10vw auto 10vw;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+  justify-content: left;
+  align-items: top;
+}
+
+.header {
+    grid-area: "header";
+  }
+
+.footer {
+  grid-area: "footer";
+}
+
+.main {
+    grid-area: "main";
+
+    margin: 0.5em;
+    padding: 15px;
+    background: rgba(150, 150, 150, 0.2);
+  }
+
+  
+  
+  /* ================= */
+  /* TESTIMONIALS GRID */
+  /* ================= */
+  
+  /* u could continue coding from here... the idea is to keep this page layout on the above grid structure and start a new grid bellow for the testimonials, style everything and define a media querie for mobile view.  */
+
+  .testimonials-grid-container {
+    display: grid;
+  }
